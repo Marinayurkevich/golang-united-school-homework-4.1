@@ -6,5 +6,5 @@ func ReverseString(input string) (output string) {
 	for i:=len(line)-1;i>=0;i--{
 	output=append(output,line[i])
 	}
-	return string(output)
+	return output
 }
