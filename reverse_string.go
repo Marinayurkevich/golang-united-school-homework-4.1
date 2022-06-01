@@ -7,7 +7,7 @@ func ReverseString(input string) (output string) {
 	line_runes=append(line_runes,runes[i])
 	}
 	for _,r:=range line_runes{
-	output=append(output,line_runes[i])
+	output=append(output,r)
 	}
 	return output
 }
