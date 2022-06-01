@@ -1,10 +1,13 @@
 package reverse_string
 
 func ReverseString(input string) (output string) {
-	line:=[]rune(input)
-	var output_arr []rune
-	for i:=len(line)-1;i>=0;i--{
-	output=append(output_arr,line[i])
+	runes:=[]rune(input)
+	var line_runes []rune
+	for i:=len(runes)-1;i>=0;i--{
+	line_runes=append(line_runes,runes[i])
+	}
+	for _,r:=range line_runes{
+	output=append(output,line_runes[i])
 	}
 	return output
 }
